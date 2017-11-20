@@ -7,15 +7,15 @@ Version 1.0.6
 ## 1. Installation
 
 ```bash
-$ npm install --save https-service
+$ npm install --save https-service-legacy
 ```
 
 ## 2. Usage
 
 ```javascript
-const HttpsService = require('https-service');
+var HttpsService = require('https-service-legacy');
 
-const service = new HttpsService('httpbin.org');
+var service = new HttpsService('httpbin.org');
 
 service.get('/get', (err, body) => {
     console.log(body);
@@ -37,11 +37,11 @@ Creates a new `HttpsService` instance for the specified host. The `hostname` can
 **Examples:**
 
 ```javascript
-const service = new HttpsService('example.com');
+var service = new HttpsService('example.com');
 ```
 
 ```javascript
-const service = new HttpsService('https://example.com:9000');
+var service = new HttpsService('https://example.com:9000');
 ```
 
 ### 3.2 request
